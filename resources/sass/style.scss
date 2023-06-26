@@ -1,0 +1,158 @@
+@import 'variables';
+
+@mixin box-shadow($bs-config) {
+  box-shadow: $bs-config;
+  -webkit-box-shadow: $bs-config;
+  -moz-box-shadow: $bs-config;
+}
+
+body,
+html {
+    position: relative;
+    font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+tr {
+  vertical-align: middle;
+}
+
+.C-data-mhs-wrapper {
+  color: $color-white;
+  background-color: $color-main;
+  padding: 2rem 6rem;
+  margin-bottom: 3rem;
+}
+
+.C-table {
+  margin: 6rem;
+}
+
+.C-title {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: $color-white;
+  background-color: $color-main;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.C-selected-subject {
+  background-color: $color-warning;
+}
+
+.C-container-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh
+}
+
+.C-card {
+  @include box-shadow($bs-dark-opacity3);
+  border-radius: $br-8;
+}
+
+.C-popup {
+  position: absolute;
+  right: 6rem;
+  top: 6rem;
+  padding: 6rem;
+  background-color: $color-main-brighter;
+}
+
+.C-mhs-printpdf {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.C-printpdf-form-wrapper {
+  display: grid;
+  align-items: center;
+}
+
+.C-printpdf-form {
+  position: absolute;
+  margin-left: 2rem;
+}
+
+.C-link {
+  padding: .85rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: $color-main;
+
+  &:hover {
+    color: $color-main-darker;
+  }
+}
+
+.C-btn-wrapper {
+  height: calc(44px + .8rem);
+  display: flex;
+  justify-content: center;
+}
+
+.C-btn {
+  all: unset;
+  width: 50%;
+  height: 44px;
+  width: 60px;
+  padding-inline: .7rem;
+  text-align: center;
+  border-radius: $br-8;
+  color: $color-white;
+  background-color: $color-main;
+
+  &:hover {
+    background-color: $color-main-darker;
+  }
+
+  &:active, &:focus {
+    @include box-shadow($bs-main);
+    border: 2px solid $color-main-brighter;
+  }
+}
+
+.C-print-btn {
+  width: 5rem;
+  background-color: $color-warning;
+}
+
+.C-kprs-header {
+  position: sticky;
+  top: 0;
+}
+
+.C-form-title {
+  margin: -1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-main;
+  border-top-left-radius: $br-8;
+  border-top-right-radius: $br-8;
+}
+
+.C-input {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  padding: .8em;
+  padding-bottom: .4em;
+  border-bottom: 2px solid $color-black;
+
+  &:focus {
+    border-bottom-color: $color-main;
+  }
+}
+
+@media only screen and (max-width:992px) {
+  .C-table {
+    margin: 1rem;
+  }
+}

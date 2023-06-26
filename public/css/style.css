@@ -1,0 +1,150 @@
+body,
+html {
+  position: relative;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+tr {
+  vertical-align: middle;
+}
+
+.C-data-mhs-wrapper {
+  color: #fafafa;
+  background-color: #528358;
+  padding: 2rem 6rem;
+  margin-bottom: 3rem;
+}
+
+.C-table {
+  margin: 6rem;
+}
+
+.C-title {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #fafafa;
+  background-color: #528358;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.C-selected-subject {
+  background-color: #f56816;
+}
+
+.C-container-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.C-card {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 0.8rem;
+}
+
+.C-popup {
+  position: absolute;
+  right: 6rem;
+  top: 6rem;
+  padding: 6rem;
+  background-color: #87c990;
+}
+
+.C-mhs-printpdf {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.C-printpdf-form-wrapper {
+  display: grid;
+  align-items: center;
+}
+
+.C-printpdf-form {
+  position: absolute;
+  margin-left: 2rem;
+}
+
+.C-link {
+  padding: 0.85rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #528358;
+}
+.C-link:hover {
+  color: #2f4933;
+}
+
+.C-btn-wrapper {
+  height: calc(44px + 0.8rem);
+  display: flex;
+  justify-content: center;
+}
+
+.C-btn {
+  all: unset;
+  width: 50%;
+  height: 44px;
+  width: 60px;
+  padding-inline: 0.7rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  color: #fafafa;
+  background-color: #528358;
+}
+.C-btn:hover {
+  background-color: #2f4933;
+}
+.C-btn:active, .C-btn:focus {
+  box-shadow: 0 0 0 0.25rem #385e3d;
+  -webkit-box-shadow: 0 0 0 0.25rem #385e3d;
+  -moz-box-shadow: 0 0 0 0.25rem #385e3d;
+  border: 2px solid #87c990;
+}
+
+.C-print-btn {
+  width: 5rem;
+  background-color: #f56816;
+}
+
+.C-kprs-header {
+  position: sticky;
+  top: 0;
+}
+
+.C-form-title {
+  margin: -1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: #fafafa;
+  background-color: #528358;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.C-input {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.8em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid #111111;
+}
+.C-input:focus {
+  border-bottom-color: #528358;
+}
+
+@media only screen and (max-width: 992px) {
+  .C-table {
+    margin: 1rem;
+  }
+}
